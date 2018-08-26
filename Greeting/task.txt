@@ -1,0 +1,3 @@
+ѕриветствовать любого пользовател€ при вводе его имени через командную строку.
+
+Welcome any user when entering his name through the command line.
