@@ -1,0 +1,5 @@
+﻿ Объявить массив с n-м количеством случайных чисел (явно инициализировать массив). 
+Вывести числа массива один раз с переходом(столбец) и один раз без перехода на новую строку(строка).
+
+ Declare an array with the n-th number of random numbers (explicitly initialize the array).  
+Print the numbers of the array once with the transition (column) and once without changing to a new line (string).
