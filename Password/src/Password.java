@@ -5,8 +5,8 @@ public class Password {
 		String password = "abcd";
 		
 		if (password.equals(args[0]))
-			System.out.println("Пароль верный!");
+			System.out.println("The password is correct!");
 		else 
-			System.out.println("Повторите ввод пароля!");	
+			System.out.println("Wrong password. Retype the password!");	
 	}
 }
