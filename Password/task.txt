@@ -1,0 +1,3 @@
+﻿Ввести пароль из командной строки и сравнить его со строкой-образцом.
+
+Enter the password from the command line and compare it with the sample string.
