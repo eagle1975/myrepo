@@ -15,5 +15,4 @@ public class Fibonacci {
 		for (i = 0; i < 20; i++) 
 			System.out.print(array[i] + " ");
 	}
-
 }
