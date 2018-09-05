@@ -1,0 +1,3 @@
+Объявить массив с n-м количеством случайных чисел (явно инициализировать массив) и выбрать из него четные и нечетные числа.
+
+Declare an array with n number of random numbers (explicitly initialize the array) and select even and odd numbers from it.
