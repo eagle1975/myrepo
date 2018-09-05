@@ -1,0 +1,3 @@
+ Выбрать из агрументов командной строки четные и нечетные числа.
+ 
+ Select even and odd numbers from the command line arguments.
