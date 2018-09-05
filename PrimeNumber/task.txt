@@ -1,0 +1,3 @@
+Объявить массив с n-м количеством случайных чисел (явно инициализировать массив) и выбрать из него простые числа
+
+Declare an array with the n-th number of random numbers (explicitly initialize the array) and select from it simple numbers
