@@ -1,0 +1,3 @@
+ Умножить две матрицы.
+ 
+ Multiply the two matrices.
