@@ -1,0 +1,3 @@
+ Задать массив с n чисел. Найти самое короткое и самое длинное число. Вывести найденные числа и их длину.
+ 
+ Set an array with n numbers. Find the shortest and longest number. Output the found numbers and their length.
