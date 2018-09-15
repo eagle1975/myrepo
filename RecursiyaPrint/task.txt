@@ -1,0 +1,3 @@
+Дано натуральное число n (обычная переменная int). Рекурсивно вывести все числа от 1 до n. (Ввод 5 -> вывод 1 2 3 4 5, делать отдельным классом и в нем метод)
+
+Given a natural number n (the usual variable int). Recursively output all numbers from 1 to n. (Enter 5 -> output 1 2 3 4 5, make a separate class and in it a method)
