@@ -1,0 +1,18 @@
+﻿1. Создать класс по спецификации. Определить конструктор для всех полей. Создать отдельно класс процессор, который
+будет выполнять определенные действия с объектамии и соджержать метод для печати объект. В методе main создать массив объектов и используя
+класс процессор выполнить необходимые операции.
+
+Car: id, Марка, Модель, Год выпуска, Цвет, Цена, Регистрационный номер.
+Создать массив объектов. Вывести:
+a) список автомобилей заданной марки;
+b) список автомобилей заданной модели, которые эксплуатируются больше n лет;
+c) список автомобилей заданного года выпуска, цена которых больше указанной.
+
+
+1. Create a class by specification. Define a constructor for all fields. Create a separate class processor that will perform certain actions on objects and hold the method to print the object.
+ In the main method create an array of objects and use the class processor to perform the necessary operations.
+
+Car: id, make, model, year of manufacture, color, price, registration number. Create an array of objects. Print: 
+a) a list of cars of a given brand; 
+b) a list of vehicles of a given model that have been operated for more than n years; 
+c) a list of vehicles of a given year of release, the price of which is higher than the specified
