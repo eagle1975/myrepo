@@ -1,5 +1,5 @@
 
-public class Processor {
+ class Processor {
 	
 	private Car[] carProc;
 	
@@ -26,6 +26,12 @@ public class Processor {
 			if ((y == car.getProductionYear()) && (p < car.getPrice()))
 				printCar(car);
 		}
+	}
+	
+	void printAll() {
+		for (Car car:carProc)
+			printCar(car);
+			
 	}
 	
 	void printCar(Car car) {

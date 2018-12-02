@@ -20,7 +20,7 @@ public class Runner {
 		Processor proc = new Processor(cars);
 		
 		System.out.println("A list of cars of a given brand:\n");
-		proc.findeCarByMark("Opel");
+		proc.findeCarByMark("BMW");
 		System.out.println();
 		
 		System.out.println("A list of cars of a given model that have been operated for more than n years:\n");
@@ -29,6 +29,10 @@ public class Runner {
 		
 		System.out.println("A list of vehicles of a given year of release, the price of which is higher than the specified:\n");
 		proc.findeCarByYearAndPrice(2009, 12000);
+		System.out.println();
+		
+		System.out.println("Print All cars:\n");
+		proc.printAll();
 	}
 
 }
