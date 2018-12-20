@@ -35,6 +35,6 @@
 	}
 	
 	void printCar(Car car) {
-		System.out.println(car.toString());
+		System.out.println(car);
 	}
 }
