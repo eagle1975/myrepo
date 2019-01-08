@@ -1,0 +1,14 @@
+﻿ Создать в классе процессора из TaksiStation поле для хранения массива объектов. 
+Сделать два перегруженных конструктора - один принимает массив объектов и устанавливает 
+его в поле, второй - не принимает параметров но создает пустой массив 
+объектов и устанавливает его в поле. Перегрузить все три метода, чтобы в одном случае 
+они принимали массив и параметры для поиска и работали с этим массивом,
+а в другом случае принимали только параметры для поиска и работали с внутренним массивом в случае если он не пустой. 
+
+
+
+  Create a field in the processor class from the TaksiStation for storing an array of objects.
+Make two overloaded constructors - one takes an array of objects and sets it is in the field,
+the second one does not accept parameters but creates an empty arrayobjects and sets it in the box.
+Overload all three methods so that in one case they took an array and parameters for the search and worked with this array,
+in the other case, they took only parameters for the search and worked with the internal array in case it is not empty.
