@@ -1,0 +1,21 @@
+﻿    Таксопарк. Определить иерархию легковых автомобилей. Создать таксопарк. 
+-Подсчитать стоимость автопарка. Провести сортировку автомобилей парка по расходу топлива.
+-Найти автомобили в компании, соответствующие заданному диапазону параметров скорости.
+-Для каждого класса легковых автомобилей определить toString() и использовать его для печати объекта.
+
+- массив, который будет возвращен методом поиска автомобилей по скорости расширять 
+  динамически(не считать сразу кол-во подходящих под критерий автомобилей);
+- в метод по поиску машин по диапазону задавать min и max скорость и проверять, 
+  входит ли максимальная скорость текущего автомобиля в диапазон;
+- в классе таксопарка ничего не печатать!!!(System.out.println())
+
+     Taxi Park. Determine the hierarchy of cars. Create a taxi station.
+-Count the cost of the fleet. To sort the fleet vehicles by fuel consumption.
+- Find the cars in the company that match the specified range of speed parameters.
+-For each class of passenger cars, define toString () and use it to print the object.
+
+- the array that will be returned by the car search method to expand
+  dynamically (do not immediately count the number of suitable cars for the criterion);
+- in the method for searching machines by range, set the min and max speed and check,
+  whether the maximum speed of the current car is in the range;
+- in the class of taxis do not print anything !!! (System.out.println ())
