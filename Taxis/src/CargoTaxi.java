@@ -4,8 +4,8 @@ public class CargoTaxi extends Vehicle {
 	
 	private int loadÑapacity;
 	
-	public CargoTaxi(int loadCapacity, int id, String mark, String model, String color, int yearProduction, float price, float fuelConsumption, int maxSpeed) {
-		super(id, mark, color, color, maxSpeed, fuelConsumption, fuelConsumption, maxSpeed);
+	public CargoTaxi(int id, String mark, String model, String color, int yearProduction, float price, float fuelConsumption, int maxSpeed, int loadCapacity) {
+		super(id, mark, model, color, yearProduction, price, fuelConsumption, maxSpeed);
 		this.loadÑapacity = loadCapacity;
 	}
 
@@ -19,9 +19,9 @@ public class CargoTaxi extends Vehicle {
 
 	@Override
 	public String toString() {
-		return "CargoTaxi [loadÑapacity=" + loadÑapacity + ", Id=" + getId() + ", Mark=" + getMark() 
-		        + ", Model=" + getModel() + ", Color=" + getColor() + ", YearProduction="
-				+ getYearProduction() + ", Price=" + getPrice() + ", FuelConsumption=" + getFuelConsumption()
-				+ ", MaxSpeed=" + getMaxSpeed() + "]";
+		return "CargoTaxi [Id()=" + getId() + ", Mark=" + getMark() + ", Model=" + getModel()
+				+ ", Color=" + getColor() + ", YearProduction=" + getYearProduction() + ", Price="
+				+ getPrice() + ", FuelConsumption=" + getFuelConsumption() + ", MaxSpeed=" + getMaxSpeed()
+				+ ", loadÑapacity=" + loadÑapacity + "]";
 	}
 }

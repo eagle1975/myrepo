@@ -4,7 +4,7 @@ public class Passenger extends Vehicle {
 	
 	private int NumberOfPassengers;
 	
-	public Passenger(int numberOfPassengers, int id, String mark, String model, String color, int yearProduction, float price, float fuelConsumption, int maxSpeed) {
+	public Passenger(int id, String mark, String model, String color, int yearProduction, float price, float fuelConsumption, int maxSpeed, int numberOfPassengers) {
 		super(id, mark, model, color, yearProduction, price, fuelConsumption, maxSpeed);
 		this.NumberOfPassengers = numberOfPassengers;
 	}
@@ -19,9 +19,11 @@ public class Passenger extends Vehicle {
 
 	@Override
 	public String toString() {
-		return "Passenger [NumberOfPassengers=" + NumberOfPassengers + ", Id=" + getId() + ", Mark="
-				+ getMark() + ", Model=" + getModel() + ", Color=" + getColor() + ", YearProduction="
-				+ getYearProduction() + ", Price=" + getPrice() + ", FuelConsumption=" + getFuelConsumption()
-				+ ", MaxSpeed=" + getMaxSpeed() + "]";
+		return "Passenger [Id=" + getId() + ", Mark=" + getMark() + ", Model=" + getModel()
+				+ ", Color=" + getColor() + ", YearProduction=" + getYearProduction() + ", Price="
+				+ getPrice() + ", FuelConsumption=" + getFuelConsumption() + ", MaxSpeed=" + getMaxSpeed()
+				+ ", NumberOfPassengers=" + NumberOfPassengers + "]";
 	}
+
+	
 }

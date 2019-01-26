@@ -3,14 +3,14 @@
 public class Cars extends Passenger {
 	
 	private String body;
-
-	public Cars(String body, int numberOfPassengers, int id, String mark, String model, String color, int yearProduction,
-			float price, float fuelConsumption, int maxSpeed) {
-		super(numberOfPassengers, id, mark, model, color, yearProduction, price, fuelConsumption, maxSpeed);
+			
+	public Cars(int id, String mark, String model, String color, int yearProduction, float price, float fuelConsumption,
+			int maxSpeed, int numberOfPassengers, String body) {
+		super(id, mark, model, color, yearProduction, price, fuelConsumption, maxSpeed, numberOfPassengers);
 		
-		this.body = body;
+		this.body = body;		
 	}
-
+	
 	public String getBody() {
 		return body;
 	}
@@ -21,6 +21,11 @@ public class Cars extends Passenger {
 
 	@Override
 	public String toString() {
-		return "Cars [body=" + body + super.toString() + "]";
+		return "Cars [Id=" + getId() + ", Mark=" + getMark() + ", Model=" + getModel() + ", Color="
+				+ getColor() + ", YearProduction=" + getYearProduction() + ", Price=" + getPrice()
+				+ ", FuelConsumption=" + getFuelConsumption() + ", MaxSpeed=" + getMaxSpeed()
+				+ ", NumberOfPassengers=" + getNumberOfPassengers() + ", body=" + body + "]";
 	}
+
+	
 }

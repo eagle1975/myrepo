@@ -3,9 +3,10 @@
 public class Bus extends Passenger {
 	
 	private String purpose;
-
-	public Bus(String purpose, int numberOfPassengers, int id, String mark, String model, String color, int yearProduction, float price,	float fuelConsumption, int maxSpeed) {
-		super(numberOfPassengers, id, mark, model, color, yearProduction, price, fuelConsumption, maxSpeed);
+	
+	public Bus(int id, String mark, String model, String color, int yearProduction, float price, float fuelConsumption,
+			int maxSpeed, int numberOfPassengers, String purpose) {
+		super(id, mark, model, color, yearProduction, price, fuelConsumption, maxSpeed, numberOfPassengers);
 		
 		this.purpose = purpose;
 	}
@@ -20,9 +21,11 @@ public class Bus extends Passenger {
 
 	@Override
 	public String toString() {
-		return "Bus [purpose=" + purpose + ", NumberOfPassengers=" + getNumberOfPassengers() + ", Id="
-				+ getId() + ", Mark=" + getMark() + ", Model=" + getModel() + ", Color=" + getColor()
-				+ ", YearProduction=" + getYearProduction() + ", Price=" + getPrice()
-				+ ", FuelConsumption=" + getFuelConsumption() + "]";
+		return "Bus [Id=" + getId() + ", Mark=" + getMark() + ", Model=" + getModel() + ", Color="
+				+ getColor() + ", YearProduction=" + getYearProduction() + ", Price=" + getPrice()
+				+ ", FuelConsumption=" + getFuelConsumption() + ", MaxSpeed=" + getMaxSpeed()
+				+ ", NumberOfPassengers=" + getNumberOfPassengers() + ", purpose=" + purpose + "]";
 	}
+
+	
 }
