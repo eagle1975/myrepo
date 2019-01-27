@@ -1,0 +1,14 @@
+﻿Переделать предыдущее задание.
+
+Сделать Car интерфейсом (например методы int getPrice(); и void setPrice(int price).
+Создать несколько конкретных автомобилей, которые будут реализовывать интерфейс.
+Сделать таксопарк интерфейсом, определить в нем действия, которые должен выполнять таксопарк.
+Создать конкретный такосопарк который будет реализовывать интерфейс таксопарка.
+
+
+Redo the previous task.
+
+Make Car an interface (for example, the int methods getPrice (); and void setPrice (int price).
+Create a few specific cars that will implement the interface. 
+To make a taxi company an interface, to define in it the actions that a taxi company should perform.
+Create a specific takosopark that will implement the taxis interface.
