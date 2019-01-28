@@ -1,10 +1,10 @@
 // 08.01.2019
 // Taxi Park. Cost calculation. Sort by fuel consumption. Finding cars at maximum speed in a given range.
-public class TaxiPark {
+public class TaxiParkImpl implements ITaxiPark{
 		
 	private IVehicle[] cars;
 	
-	public TaxiPark(IVehicle[] car) {
+	public TaxiParkImpl(IVehicle[] car) {
 		cars = car;
 	}
 	
