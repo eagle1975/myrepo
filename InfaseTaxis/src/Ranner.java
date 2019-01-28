@@ -20,7 +20,7 @@ public class Ranner {
 		System.out.println();
 		
 		System.out.print("cost taxis: ");
-		TaxiParkImpl t = new TaxiParkImpl(cars);
+		ITaxiPark t = new TaxiParkImpl(cars);
 		System.out.println(t.costTaxis() + " $");
 		System.out.println();
 		
