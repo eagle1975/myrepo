@@ -1,9 +1,10 @@
+// 08.01.2019
+// Taxi Park. Cost calculation. Sort by fuel consumption. Finding cars at maximum speed in a given range.
+
 package com.test.pkgtaxi.ranner;
 
 import com.test.pkgtaxi.vehicle.IVehicle;
 
-// 08.01.2019
-// Taxi Park. Cost calculation. Sort by fuel consumption. Finding cars at maximum speed in a given range.
 public class TaxiParkImpl implements ITaxiPark{
 		
 	private IVehicle[] cars;

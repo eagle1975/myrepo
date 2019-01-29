@@ -1,6 +1,8 @@
-package com.test.pkgtaxi.vehicle;
 // 08.01.2019
 // Taxi Park. Cost calculation. Sort by fuel consumption. Finding cars at maximum speed in a given range.
+
+package com.test.pkgtaxi.vehicle;
+
 public class CargoTaxiImpl implements IVehicle {
 	 private int id;
 	 private String mark;
