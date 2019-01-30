@@ -1,0 +1,5 @@
+﻿Создать свой Exception (унаследовать от Exception), бросать его в случае передачи методу по поиску 
+автомобилей по скорости отрицательного аргумента и соответственно обработать его в месте вызова этого метода.
+
+Create your Exception (inherit from Exception), throw it in case of passing to the search method
+cars on the speed of a negative argument and accordingly process it in the place where this method is called.
