@@ -3,6 +3,7 @@
 public class TaxiPark {
 		
 	private Vehicle[] cars;
+	private static Vehicle[] res = new Vehicle[0]; 
 	
 	public TaxiPark(Vehicle[] car) {
 		cars = car;
@@ -29,22 +30,20 @@ public class TaxiPark {
 		}
 	}
 	public Vehicle[] findeCarsBySpeedByRengó(int minSpeed, int maxSpeed) {
-		int counter = 0;
-		 int r = 0;
-		 Vehicle[] res;
+		
 		 for (Vehicle car : cars) {
-			if ((minSpeed <= car.getMaxSpeed()) && (car.getMaxSpeed() <= maxSpeed)) {
-				counter += 1;
-			}
+			if ((minSpeed <= car.getMaxSpeed()) && (car.getMaxSpeed() <= maxSpeed)) 
+				res = arrayFiller(res, car);
 		}
-		 res = new Vehicle[counter];
-		 for (Vehicle ca : cars) {
-			 if ((minSpeed <= ca.getMaxSpeed()) && (ca.getMaxSpeed() <= maxSpeed)) {
-				 res[r++] = ca;
-				 }
-			 }
 		 return res;
-   }
+  }
+	Vehicle[] arrayFiller(Vehicle[] cars, Vehicle findeCar) {
+		Vehicle[] temp = new Vehicle[cars.length + 1];
+		for (int i = 0; i < cars.length; i++)
+			temp[i] = cars[i];
+		temp[cars.length] = findeCar;
+		return temp;
+	}
 }	
 	
 
