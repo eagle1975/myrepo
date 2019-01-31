@@ -14,26 +14,25 @@ public class Ranner {
 				new Cars     (7, "Opel",      "Astra",         "Green", 2009, 15000, 7,  145, 4, "Sedan" )
 		};
 		
-		System.out.println("All cars in taxis:");
+		System.out.println("All CARS IN TAXIS:");
 		for (Vehicle car : cars) 
 			System.out.println(car.toString());
 		System.out.println();
 		
-		System.out.print("cost taxis: ");
-		TaxiPark t = new TaxiPark(cars);
-		System.out.println(t.costTaxis() + " $");
+		System.out.print("COST TAXIS: ");
+		TaxiPark taxiOb = new TaxiPark(cars);
+		System.out.println(taxiOb.costTaxis() + " $");
 		System.out.println();
 		
-		System.out.println("Sort by fuel consaumption:");
-		t.sortByFuelConsumption();
+		System.out.println("SORT BY FUEL CONSUMPTION:");
+		taxiOb.sortByFuelConsumption();
 		for (Vehicle car : cars) 
 		System.out.println(car.toString());
 		System.out.println();
 		
-		System.out.println("Finde cars by speed by rengó:");
-		Vehicle finde[] = new Vehicle[t.findeCarsBySpeedByRengó(167, 180).length];
-		finde = t.findeCarsBySpeedByRengó(167, 180);
-		for (int i = 0; i < finde.length; i++) 
-			System.out.println(finde[i]);
+		System.out.println("FINDE CARS BY SPEED BY RENGY:");
+		Vehicle findeCars[] = taxiOb.findeCarsBySpeedByRengó(120, 150);
+		for (Vehicle car : findeCars)
+			System.out.println(car.toString());
 	}
 }
