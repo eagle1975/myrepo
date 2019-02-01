@@ -26,24 +26,23 @@ public class Ranner {
 			System.out.println(car.toString());
 		System.out.println();
 		
+		ITaxiPark taxiOb = new TaxiParkImpl(cars);
+		
 		System.out.print("The cost of taxis: ");
-		ITaxiPark t = new TaxiParkImpl(cars);
-		System.out.println(t.costTaxis() + " $");
+		System.out.println(taxiOb.costTaxis() + " $");
 		System.out.println();
 		
 		System.out.println("Sort by fuel consaumption:");
-		t.sortByFuelConsumption();
+		taxiOb.sortByFuelConsumption();
 		for (IVehicle car : cars) 
 		System.out.println(car.toString());
 		System.out.println();
 		
 		System.out.println("Finde cars by speed by rengó:");
-		
 		try {
-		IVehicle finde[] = new IVehicle[t.findeCarsBySpeedByRengó(-167, 180).length];
-		finde = t.findeCarsBySpeedByRengó(167, 180);
-		for (int i = 0; i < finde.length; i++) 
-			System.out.println(finde[i]);
+			IVehicle findeCars[] = taxiOb.findeCarsBySpeedByRengó(-120, 150);
+			for (IVehicle car : findeCars)
+				System.out.println(car.toString());
 		} catch (SpeedException e) {
 			System.err.println(e);
 			}

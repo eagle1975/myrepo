@@ -7,7 +7,8 @@ import com.test.exctax.except.SpeedException;
 import com.test.exctax.vehicle.IVehicle;
 
 public class TaxiParkImpl implements ITaxiPark{
-		
+	
+	private static IVehicle[] res = new IVehicle[0];
 	private IVehicle[] cars;
 	
 	public TaxiParkImpl(IVehicle[] car) {
@@ -35,25 +36,21 @@ public class TaxiParkImpl implements ITaxiPark{
 		}
 	}
 	public IVehicle[] findeCarsBySpeedByRengó(int minSpeed, int maxSpeed) throws SpeedException {
-		if (minSpeed < 0 || maxSpeed < 0) {
+		if (minSpeed < 0 || maxSpeed < 0) 
 			throw new SpeedException();
+		for (IVehicle car : cars) {
+			if ((minSpeed <= car.getMaxSpeed()) && (car.getMaxSpeed() <= maxSpeed)) 
+				res = arrayFiller(res, car);
 		}
-		int counter = 0;
-		 int r = 0;
-		 IVehicle[] res;
-		 for (IVehicle car : cars) {
-			if ((minSpeed <= car.getMaxSpeed()) && (car.getMaxSpeed() <= maxSpeed)) {
-				counter += 1;
-			}
-		}
-		 res = new IVehicle[counter];
-		 for (IVehicle ca : cars) {
-			 if ((minSpeed <= ca.getMaxSpeed()) && (ca.getMaxSpeed() <= maxSpeed)) {
-				 res[r++] = ca;
-				 }
-			 }
 		 return res;
    }
+	IVehicle[] arrayFiller(IVehicle[] cars, IVehicle findeCar) {
+		IVehicle[] temp = new IVehicle[cars.length + 1];
+		for (int i = 0; i < cars.length; i++)
+			temp[i] = cars[i];
+		temp[cars.length] = findeCar;
+		return temp;
+	}
 }	
 	
 
