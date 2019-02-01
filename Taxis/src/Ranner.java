@@ -19,8 +19,9 @@ public class Ranner {
 			System.out.println(car.toString());
 		System.out.println();
 		
-		System.out.print("COST TAXIS: ");
 		TaxiPark taxiOb = new TaxiPark(cars);
+		
+		System.out.print("COST TAXIS: ");
 		System.out.println(taxiOb.costTaxis() + " $");
 		System.out.println();
 		
