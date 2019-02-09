@@ -1,0 +1,23 @@
+﻿Реализовать инициализацию массива Car'ов (из задания про таксопарк) на основе файла (машины должны храниться в файле).
+Структура файла:
+VAZ,2104,15,180,1000,universal;
+VAZ,21099,12,200,1500,sedan
+Соотвутствующие столбцы:
+mark,model,fuel,speed,price,тип_создаваемого_объекта;
+Запятая (,) - разделитель свойств машины
+Точка с запятой и конец строки (;\n\r) - разделитель машин 
+Выполнить чтение всех байтов с файла с помощью FileInputStream в массив байтов.
+Создать строку на основе прочитанного массива байтов (String.trim).
+Разделить полученную строку таким образом, чтобы создать экземпляры классов(String.split).
+Так же, реализовать запись в файл в соответствующем формате.
+
+Implement the initialization of the Car array (from the task about the taxi fleet) on the basis of the file (machines must be stored in a file). 
+File structure:
+ VAZ, 2104,15,180,1000, universal;
+ VAZ, 21099,12,200,1500, sedan 
+Associated columns: mark, model, fuel, speed, price, type of object being created; 
+Comma (,) - machine properties separator Semicolon and end of line (; \ n \ r) - machines separator
+Execute reading of all bytes from the file using FileInputStream into the byte array.
+Create a string based on the read byte array (String.trim). 
+Split the resulting string in such a way as to create instances of classes (String.split).
+Also, write to the file in the appropriate format.
