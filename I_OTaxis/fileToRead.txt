@@ -1,0 +1,7 @@
+﻿1, "Renault",   "Maskott",       "White",  2017,  16500, 10,  150, 7500;
+2, "Iveco",     "Daily",         "Blue",   2009,  9400,  8,   130, 3860;
+3, "Scania",    "OmniExpress",   "Green",  2018,  30000, 15,  180, 51, "tourist";
+4, "LAZ",       "InterLAZ-10LE", "White",  2017,  25000, 13,  145, 45, "suburban";
+5, "Opel",      "Omega",         "Black",  2013,  15000, 8,   180, 5,  "Hatchback";
+6, "Chevrolet", "Aveo",          "Red",    2016,  12000, 12,  167, 5,  "Sedan";
+7, "Opel",      "Astra",         "Green",  2009,  15000, 7,   145, 4,  "Sedan" 
