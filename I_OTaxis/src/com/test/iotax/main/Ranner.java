@@ -12,7 +12,7 @@ public class Ranner {
 	public static void main(String[] args) {		
 		IVehicle[] cars =  null;
 		DataFileReader dataFileReader = new DataFileReader();
-		cars = dataFileReader.readerDataFile("fileToRead.txt");
+		cars = dataFileReader.readerDataFile("D:/Workspace/I_OTaxis/fileToRead.txt");
 		
 		
 //		System.out.println("All cars in taxis:");

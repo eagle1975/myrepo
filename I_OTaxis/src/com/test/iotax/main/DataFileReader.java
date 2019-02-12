@@ -11,23 +11,27 @@ public class DataFileReader {
 		try {
 			 fin = new FileInputStream(file);
 		}catch(FileNotFoundException e) {
-			System.out.println("Open file error!");
+			System.err.println("Open file error!");
 		}
 		try {
 			int n = fin.available();
 			byteBufer = new byte[n];
 			fin.read(byteBufer);
-			System.out.println(new String(byteBufer));
-//			for (int i = 0; i < n; i++) {
-//				System.out.print((char)byteBufer[i]);
-//				//System.out.print();
-				
-//		}
-			
+			String allCars = new String(byteBufer);
+			//System.out.println(allCars);
+			String[] cars = allCars.split(";\r\n"); 
+			String[] carsProperties; 
+				for (String c : cars)
+					
+					System.out.println(c);
+//			for (String c : cars)
+//				System.out.println(c);
+			//System.out.println(new String(byteBufer));
 		}catch(IOException e) {
-			System.out.println("Error input output!");
+			System.err.println("Error input output!");
 		}
 		
 		return resaltArray;
 		}
+	
 }
