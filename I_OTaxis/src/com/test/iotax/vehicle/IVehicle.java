@@ -20,10 +20,10 @@ public interface IVehicle {
 	 void setYearProduction(int yearProduction);
 		
 	 float getPrice(); 
-     void setPrice(float price);
+     void setPrice(int price);
 	 
 	 float getFuelConsumption();
-	 void setFuelConsumption(float fuelConsumption);
+	 void setFuelConsumption(int fuelConsumption);
 		
 	 int getMaxSpeed();
 	 void setMaxSpeed(int maxSpeed);

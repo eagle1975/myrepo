@@ -7,7 +7,7 @@ public class Bus extends PassengerImpl {
 	
 	private String purpose;
 	
-	public Bus(int id, String mark, String model, String color, int yearProduction, float price, float fuelConsumption,
+	public Bus(int id, String mark, String model, String color, int yearProduction, int price, int fuelConsumption,
 			int maxSpeed, int numberOfPassengers, String purpose) {
 		super(id, mark, model, color, yearProduction, price, fuelConsumption, maxSpeed, numberOfPassengers);
 		

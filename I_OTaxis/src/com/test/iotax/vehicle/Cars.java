@@ -7,7 +7,7 @@ public class Cars extends PassengerImpl {
 	
 	private String body;
 			
-	public Cars(int id, String mark, String model, String color, int yearProduction, float price, float fuelConsumption,
+	public Cars(int id, String mark, String model, String color, int yearProduction, int price, int fuelConsumption,
 			int maxSpeed, int numberOfPassengers, String body) {
 		super(id, mark, model, color, yearProduction, price, fuelConsumption, maxSpeed, numberOfPassengers);
 		

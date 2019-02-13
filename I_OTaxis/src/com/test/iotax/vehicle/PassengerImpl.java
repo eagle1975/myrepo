@@ -9,12 +9,12 @@ public class PassengerImpl implements IVehicle {
 	 private String model;
 	 private String color;
 	 private int yearProduction;
-	 private float price;
-	 private float fuelConsumption;
+	 private int price;
+	 private int fuelConsumption;
 	 private int maxSpeed;
 	 private int NumberOfPassengers;
 	
-	public PassengerImpl(int id, String mark, String model, String color, int yearProduction, float price, float fuelConsumption, int maxSpeed, int numberOfPassengers) {
+	public PassengerImpl(int id, String mark, String model, String color, int yearProduction, int price, int fuelConsumption, int maxSpeed, int numberOfPassengers) {
 		this.id = id;
 		this.mark = mark;
 		this.model = model;
@@ -67,18 +67,18 @@ public class PassengerImpl implements IVehicle {
 	}
 
 	public float getPrice() {
-		return price;
+		return (float) price;
 	}
 
-	public void setPrice(float price) {
+	public void setPrice(int price) {
 		this.price = price;
 	}
 
 	public float getFuelConsumption() {
-		return fuelConsumption;
+		return (float) fuelConsumption;
 	}
 
-	public void setFuelConsumption(float fuelConsumption) {
+	public void setFuelConsumption(int fuelConsumption) {
 		this.fuelConsumption = fuelConsumption;
 	}
 
