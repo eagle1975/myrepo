@@ -100,7 +100,7 @@ public class CargoTaxiImpl implements IVehicle {
 
 	@Override
 	public String toString() {
-		return "CargoTaxi [Id()=" + getId() + ", Mark=" + getMark() + ", Model=" + getModel()
+		return "CargoTaxi [Id=" + getId() + ", Mark=" + getMark() + ", Model=" + getModel()
 				+ ", Color=" + getColor() + ", YearProduction=" + getYearProduction() + ", Price="
 				+ getPrice() + ", FuelConsumption=" + getFuelConsumption() + ", MaxSpeed=" + getMaxSpeed()
 				+ ", load—apacity=" + load—apacity + "]";

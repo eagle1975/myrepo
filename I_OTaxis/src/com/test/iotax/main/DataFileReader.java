@@ -26,27 +26,25 @@ public class DataFileReader {
 			byteBufer = new byte[n];
 			fin.read(byteBufer);
 			allVehicle = new String(byteBufer);
-			vehicle = allVehicle.split(";\r\n"); 
+			vehicle = allVehicle.split(";\r\n");
+			resaltArray = new IVehicle[vehicle.length];
 				for (int i = 0; i < vehicle.length; i++) {
 					vehicleProperties = vehicle[i].split(",");
-					switch (vehicleProperties[vehicleProperties.length - 1]) {
-						case  "cargo" : resaltArray[i] = new CargoTaxiImpl(Integer.parseInt(vehicleProperties[0].trim()), vehicleProperties[1].trim(), vehicleProperties[2].trim(), vehicleProperties[3].trim(),
+					switch (vehicleProperties[vehicleProperties.length - 1].trim()) {
+						case  "cargo" : resaltArray[i] = new CargoTaxiImpl(Integer.parseInt(vehicleProperties[0]), vehicleProperties[1].trim(), vehicleProperties[2].trim(), vehicleProperties[3].trim(),
 								Integer.parseInt(vehicleProperties[4].trim()), Integer.parseInt(vehicleProperties[5].trim()), Integer.parseInt(vehicleProperties[6].trim()),
 								Integer.parseInt(vehicleProperties[7].trim()), Integer.parseInt(vehicleProperties[8].trim()));
 							break;
-						case "bus" :  resaltArray[i] = new Bus(Integer.parseInt(vehicleProperties[0]), vehicleProperties[1], vehicleProperties[2], vehicleProperties[3],
-								Integer.parseInt(vehicleProperties[4]), Integer.parseInt(vehicleProperties[5].trim()), Integer.parseInt(vehicleProperties[6].trim()),
-								Integer.parseInt(vehicleProperties[7]), Integer.parseInt(vehicleProperties[8]), vehicleProperties[9]);
+						case "bus" :  resaltArray[i] = new Bus(Integer.parseInt(vehicleProperties[0]), vehicleProperties[1].trim(), vehicleProperties[2].trim(), vehicleProperties[3].trim(),
+								Integer.parseInt(vehicleProperties[4].trim()), Integer.parseInt(vehicleProperties[5].trim()), Integer.parseInt(vehicleProperties[6].trim()),
+								Integer.parseInt(vehicleProperties[7].trim()), Integer.parseInt(vehicleProperties[8].trim()), vehicleProperties[9].trim());
 							break;
-						case "car" : resaltArray[i] = new Cars(Integer.parseInt(vehicleProperties[0]), vehicleProperties[1], vehicleProperties[2], vehicleProperties[3],
-								Integer.parseInt(vehicleProperties[4]), Integer.parseInt(vehicleProperties[5].trim()), Integer.parseInt(vehicleProperties[6].trim()),
-								Integer.parseInt(vehicleProperties[7]), Integer.parseInt(vehicleProperties[8]), vehicleProperties[9]);
+						case "car" : resaltArray[i] = new Cars(Integer.parseInt(vehicleProperties[0]), vehicleProperties[1].trim(), vehicleProperties[2].trim(), vehicleProperties[3].trim(),
+								Integer.parseInt(vehicleProperties[4].trim()), Integer.parseInt(vehicleProperties[5].trim()), Integer.parseInt(vehicleProperties[6].trim()),
+								Integer.parseInt(vehicleProperties[7].trim()), Integer.parseInt(vehicleProperties[8].trim()), vehicleProperties[9].trim());
 							break;
-										
 					}
-					
 				}
-								
 		}catch(IOException e) {
 			System.err.println("Error input output!");
 		}
@@ -58,5 +56,4 @@ public class DataFileReader {
 		}
 		return resaltArray;
 		}
-	
 }
