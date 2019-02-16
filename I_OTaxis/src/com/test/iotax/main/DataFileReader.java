@@ -13,18 +13,28 @@ public class DataFileReader {
 	IVehicle[] resaltArray;
 	String[] vehicle;
 	String[] vehicleProperties;
-	FileInputStream fin;
+	FileInputStream fin = null;
 	
 	public IVehicle[] readerDataFile(String file) {
 		try {
 			 fin = new FileInputStream(file);
-		}catch(FileNotFoundException e) {
+		} catch(FileNotFoundException e) {
 			System.err.println("Open file error!");
 		}
 		try {
 			int n = fin.available();
 			byteBufer = new byte[n];
 			fin.read(byteBufer);
+		} catch(IOException e) {
+			System.err.println("Error read from file!");
+		} finally {
+		try {
+			if (fin != null)
+			fin.close();
+		} catch (IOException e) {
+			System.err.println("error closing file" + e);
+		}
+		}
 			allVehicle = new String(byteBufer);
 			vehicle = allVehicle.split(";\r\n");
 			resaltArray = new IVehicle[vehicle.length];
@@ -44,17 +54,7 @@ public class DataFileReader {
 								Integer.parseInt(vehicleProperties[7].trim()), Integer.parseInt(vehicleProperties[8].trim()), vehicleProperties[9].trim());
 							break;
 					}
-				}
-		}catch(IOException e) {
-			System.err.println("Error input output!");
-		} finally {
-		try {
-			if (fin != null)
-			fin.close();
-		} catch (IOException e) {
-			System.err.println("error closing file" + e);
-		}
-		}
+				}	
 		return resaltArray;
 		}
 }
