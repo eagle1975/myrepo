@@ -16,15 +16,13 @@ public class DataFileReader {
 	FileInputStream fin = null;
 	
 	public IVehicle[] readerDataFile(String file) {
-		try {
-			 fin = new FileInputStream(file);
-		} catch(FileNotFoundException e) {
-			System.err.println("Open file error!");
-		}
-		try {
+		try {												
+			fin = new FileInputStream(file);
 			int n = fin.available();
 			byteBufer = new byte[n];
 			fin.read(byteBufer);
+		} catch(FileNotFoundException e) {
+			System.err.println("Open file error!");
 		} catch(IOException e) {
 			System.err.println("Error read from file!");
 		} finally {
@@ -32,7 +30,7 @@ public class DataFileReader {
 			if (fin != null)
 			fin.close();
 		} catch (IOException e) {
-			System.err.println("error closing file" + e);
+			System.err.println("Error closing file" + e);
 		}
 		}
 			allVehicle = new String(byteBufer);
