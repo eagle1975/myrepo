@@ -47,8 +47,8 @@ public class DataFileReader {
 								 Integer.parseInt(vehicleProperties[5].trim()), Integer.parseInt(vehicleProperties[6].trim()), Integer.parseInt(vehicleProperties[7].trim()),
 								 Integer.parseInt(vehicleProperties[8].trim()), vehicleProperties[9].trim());
 						break;
-					}
-				}	
+			}
+		}	
 		return resaltArray;
-		}
+	}
 }

@@ -4,4 +4,4 @@
 4, LAZ,       InterLAZ-10LE, White, 2017, 25000, 13, 145, 45,   suburban,  bus;
 5, Opel,      Omega,         Black, 2013, 15000, 8,  180, 5,    Hatchback, car;
 6, Chevrolet, Aveo,          Red,   2016, 12000, 12, 167, 5,    Sedan,     car;
-7, Opel,      Astra,         Green, 2009, 15000, 7,  145, 4,    Sedan,      car 
+7, Opel,      Astra,         Green, 2009, 15000, 7,  145, 4,    Sedan,     car 
