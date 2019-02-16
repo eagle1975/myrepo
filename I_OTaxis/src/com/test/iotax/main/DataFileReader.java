@@ -47,12 +47,13 @@ public class DataFileReader {
 				}
 		}catch(IOException e) {
 			System.err.println("Error input output!");
-		}
+		} finally {
 		try {
 			if (fin != null)
 			fin.close();
 		} catch (IOException e) {
 			System.err.println("error closing file" + e);
+		}
 		}
 		return resaltArray;
 		}
