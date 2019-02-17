@@ -8,6 +8,7 @@ import com.test.iotax.vehicle.Cars;
 import com.test.iotax.vehicle.IVehicle;
 
 public class DataFileReader {
+	private String file;
 	String allVehicle;
 	byte[] byteBufer;
 	IVehicle[] resaltArray;
@@ -15,7 +16,11 @@ public class DataFileReader {
 	String[] vehicleProperties;
 	FileInputStream fin = null;
 	
-	public IVehicle[] readerDataFile(String file) {
+	public DataFileReader(String file) {
+		this.file = file;
+	}
+	
+	public IVehicle[] readerDataFile() {
 		try (FileInputStream fin = new FileInputStream(file)) {												
 			int n = fin.available();
 			byteBufer = new byte[n];
@@ -35,8 +40,7 @@ public class DataFileReader {
 							        vehicleProperties[2].trim(),  vehicleProperties[3].trim(), Integer.parseInt(vehicleProperties[4].trim()),
 							        Integer.parseInt(vehicleProperties[5].trim()), Integer.parseInt(vehicleProperties[6].trim()), Integer.parseInt(vehicleProperties[7].trim()),
 							        Integer.parseInt(vehicleProperties[8].trim()));
-					
-						break;
+					    break;
 					case "bus" :  resaltArray[i] = new Bus(Integer.parseInt(vehicleProperties[0]), vehicleProperties[1].trim(),
 								  vehicleProperties[2].trim(), vehicleProperties[3].trim(), Integer.parseInt(vehicleProperties[4].trim()),
 								  Integer.parseInt(vehicleProperties[5].trim()), Integer.parseInt(vehicleProperties[6].trim()), Integer.parseInt(vehicleProperties[7].trim()),

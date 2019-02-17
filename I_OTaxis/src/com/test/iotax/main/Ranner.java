@@ -9,11 +9,16 @@ import com.test.iotax.except.SpeedException;
 
 public class Ranner {
 
-	public static void main(String[] args) {		
+	private static final String FILE_TO_READ = "D:/Workspace/I_OTaxis/fileToRead.txt";
+	private static final String FILE_TO_WRITE = "D:/Workspace/I_OTaxis/fileOutput.txt";
+
+	public static void main(String[] args) {
 		IVehicle[] cars;
-		DataFileReader dataFileReader = new DataFileReader();
-		cars = dataFileReader.readerDataFile("D:/Workspace/I_OTaxis/fileToRead.txt");
-					
+		DataFileReader dataFileReader = new DataFileReader(FILE_TO_READ);
+		DataFileWriter dataFileWriter = new DataFileWriter(FILE_TO_WRITE);
+		
+		cars = dataFileReader.readerDataFile();
+							
 		System.out.println("All cars in taxis:");
 		for (IVehicle car : cars) 
 			System.out.println(car.toString());
