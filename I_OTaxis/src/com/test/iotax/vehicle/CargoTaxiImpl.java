@@ -3,7 +3,7 @@
 
 package com.test.iotax.vehicle;
 
-public class CargoTaxiImpl implements IVehicle {
+public  class CargoTaxiImpl implements IVehicle {
 	 private int id;
 	 private String mark;
 	 private String model;

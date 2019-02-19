@@ -97,6 +97,7 @@ public class PassengerImpl implements IVehicle {
 	public void setNumberOfPassengers(int numberOfPassengers) {
 		NumberOfPassengers = numberOfPassengers;
 	}
+	
 
 	@Override
 	public String toString() {
@@ -107,4 +108,5 @@ public class PassengerImpl implements IVehicle {
 	}
 
 	
+		
 }

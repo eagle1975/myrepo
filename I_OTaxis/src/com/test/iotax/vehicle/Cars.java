@@ -3,7 +3,7 @@
 
 package com.test.iotax.vehicle;
 
-public class Cars extends PassengerImpl {
+public  class Cars extends PassengerImpl {
 	
 	private String body;
 			

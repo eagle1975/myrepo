@@ -1,0 +1,29 @@
+All cars in taxis: 
+
+1, Renault, Maskott, White, 2017, 16500.0, 10.0, 150, 7500;
+2, Iveco, Daily, Blue, 2009, 9400.0, 8.0, 130, 3860;
+3, Scania, OmniExpress, Green, 2018, 30000.0, 15.0, 180, 51, tourist;
+4, LAZ, InterLAZ-10LE, White, 2017, 25000.0, 13.0, 145, 45, suburban;
+5, Opel, Omega, Black, 2013, 15000.0, 8.0, 180, 5, Hatchback;
+6, Chevrolet, Aveo, Red, 2016, 12000.0, 12.0, 167, 5, Sedan;
+7, Opel, Astra, Green, 2009, 15000.0, 7.0, 145, 4, Sedan
+
+The cost of taxis: 122900.0
+
+Sort by fuel consaumption: 
+
+7, Opel, Astra, Green, 2009, 15000.0, 7.0, 145, 4, Sedan;
+5, Opel, Omega, Black, 2013, 15000.0, 8.0, 180, 5, Hatchback;
+2, Iveco, Daily, Blue, 2009, 9400.0, 8.0, 130, 3860;
+1, Renault, Maskott, White, 2017, 16500.0, 10.0, 150, 7500;
+6, Chevrolet, Aveo, Red, 2016, 12000.0, 12.0, 167, 5, Sedan;
+4, LAZ, InterLAZ-10LE, White, 2017, 25000.0, 13.0, 145, 45, suburban;
+3, Scania, OmniExpress, Green, 2018, 30000.0, 15.0, 180, 51, tourist
+
+Finde cars by speed by rengó: 
+
+7, Opel, Astra, Green, 2009, 15000.0, 7.0, 145, 4, Sedan;
+2, Iveco, Daily, Blue, 2009, 9400.0, 8.0, 130, 3860;
+1, Renault, Maskott, White, 2017, 16500.0, 10.0, 150, 7500;
+4, LAZ, InterLAZ-10LE, White, 2017, 25000.0, 13.0, 145, 45, suburban
+

@@ -27,4 +27,7 @@ public interface IVehicle {
 		
 	 int getMaxSpeed();
 	 void setMaxSpeed(int maxSpeed);
+	 
+	
+	
 }

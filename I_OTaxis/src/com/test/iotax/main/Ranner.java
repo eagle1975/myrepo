@@ -18,29 +18,18 @@ public class Ranner {
 		DataFileWriter dataFileWriter = new DataFileWriter(FILE_TO_WRITE);
 		
 		cars = dataFileReader.readerDataFile();
-							
-		System.out.println("All cars in taxis:");
-		for (IVehicle car : cars) 
-			System.out.println(car.toString());
-		System.out.println();
+		dataFileWriter.writeFile(cars, "All cars in taxis: \n\n");					
 		
 		ITaxiPark taxiOb = new TaxiParkImpl(cars);
 		
-		System.out.print("The cost of taxis: ");
-		System.out.println(taxiOb.costTaxis() + " $");
-		System.out.println();
-		
-		System.out.println("Sort by fuel consaumption:");
+		dataFileWriter.writeFilePrice("The cost of taxis: ", taxiOb.costTaxis());;
+				
 		taxiOb.sortByFuelConsumption();
-		for (IVehicle car : cars) 
-		System.out.println(car.toString());
-		System.out.println();
-		
-		System.out.println("Finde cars by speed by rengó:");
+		dataFileWriter.writeFile(cars, "Sort by fuel consaumption: \n\n");
+
 		try {
-			IVehicle findeCars[] = taxiOb.findeCarsBySpeedByRengó(-120, 150);
-			for (IVehicle car : findeCars)
-				System.out.println(car.toString());
+			IVehicle findeCars[] = taxiOb.findeCarsBySpeedByRengó(120, 150);
+			dataFileWriter.writeFile(findeCars, "Finde cars by speed by rengó: \n\n");		
 		} catch (SpeedException e) {
 			System.err.println(e);
 			}
