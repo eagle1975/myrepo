@@ -2,6 +2,7 @@
 .project
 .settings/
 bin/
+build/
 .metadata/
 RemoteSystemTempFiles/
 .recommenders/
