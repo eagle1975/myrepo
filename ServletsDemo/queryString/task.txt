@@ -1,0 +1,1 @@
+Получение строки запроса из HttpServletRequest.
